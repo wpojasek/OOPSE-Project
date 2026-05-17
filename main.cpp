@@ -6,7 +6,7 @@ using namespace std;
 
 // ==========================================
 // 1. FILTRY (Parametry wyszukiwania)
-// Używamy prostych typów wyliczeniowych (enum), 
+// Używamy prostych typów wyliczeniowych (enum) - FEATURE Z GEMINI
 // żeby łatwo było wybierać opcje w terminalu.
 // ==========================================
 
@@ -24,7 +24,7 @@ private:
     string username;
     string password;
     // Na razie przechowujemy nazwy jako stringi. 
-    // Docelowo tu będzie wektor wskaźników/identyfikatorów z bazy Osoby 2.
+    // Docelowo tu będzie wektor wskaźników/identyfikatorów z bazy twojej Krzysiu 
     vector<string> favouriteRestaurants; 
 
 public:
@@ -65,17 +65,17 @@ public:
 
 // ==========================================
 // 3. SILNIK WYSZUKIWANIA (SearchEngine)
-// Odpowiada za logikę filtrowania (Twoja działka).
+// Odpowiada za logikę filtrowania
 // ==========================================
 
 class SearchEngine {
 public:
     // Ta metoda na razie tylko symuluje działanie. 
-    // Później przekażesz jej bazę restauracji od Osoby 2 i będziesz po niej iterować.
+    // Potem wjebemy tutaj baze danych restauracji od ciebie Krzychu
     void searchRestaurants(int hunger, int cuisine, int price) {
         cout << "\nSzukam restauracji dla podanych filtrow..." << endl;
         
-        // Tutaj znajdzie się Twoja logika:
+        // Tutaj logika 
         // if (restaurant.cuisine == cuisine && restaurant.price == price) ...
         
         cout << "==========================================" << endl;
@@ -124,7 +124,7 @@ int main() {
         }
     }
 
-    // Inicjalizacja Twojego silnika wyszukiwania
+    // Inicjalizacja silnika
     SearchEngine engine;
     int choice = 0;
 
